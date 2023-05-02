@@ -54,3 +54,7 @@ create table if not exists categoria (
 );
 
 show tables;
+INSERT INTO instituicao VALUES (null, "Fatec Shunji Nishimura");
+INSERT INTO instituicao VALUES (null, "Senai Shunji Nishimura");
+INSERT INTO instituicao VALUES (null, "Colégio Shunji Nishimura");
+SELECT*FROM instituicao;
