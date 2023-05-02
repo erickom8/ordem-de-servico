@@ -1,5 +1,23 @@
 <p>Instituicao</p>
 
-<div *ngFor="let p of products">
-  <p>{{p.nome_instituicao}}</p>
+<div *ngFor="let p of products">  
+    <h1>{{p.nome_instituicao}}</h1>
+
+    <div *ngFor="let f of SetorFatec" >
+        <div *ngIf="p.nome_instituicao === 'Fatec Shunji Nishimura'">
+          <h2>{{f.nome_setor}}</h2>
+        </div>
+    </div>
+
+    <div *ngFor="let s of SetorSenai" >
+          <div *ngIf="p.nome_instituicao === 'Senai Shunji Nishimura'">
+           <h2>{{s.nome_setor}}</h2>
+          </div>
+    </div>
+
+    <div *ngFor="let c of SetorColegio" >
+         <div *ngIf="p.nome_instituicao === 'Colégio Shunji Nishimura'">
+          <h2>{{c.nome_setor}}</h2>
+         </div>
+    </div>
 </div>
